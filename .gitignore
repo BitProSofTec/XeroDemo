@@ -1,0 +1,13 @@
+/packages/
+/XeroDemo/bin/
+/XeroDemo/obj/
+/XeroDemo/obj/Debug/
+/.vs/XeroDemo/config/applicationhost.config
+/.vs/XeroDemo/v16/.suo
+/XeroDemo/obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/XeroDemo/obj/Debug/XeroDemo.csproj.CopyComplete
+/XeroDemo/obj/Debug/XeroDemo.csproj.CoreCompileInputs.cache
+/XeroDemo/obj/Debug/XeroDemo.csproj.FileListAbsolute.txt
+/XeroDemo/obj/Debug/XeroDemo.csprojAssemblyReference.cache
+/XeroDemo/obj/Debug/XeroDemo.dll
+/XeroDemo/obj/Debug/XeroDemo.pdb
