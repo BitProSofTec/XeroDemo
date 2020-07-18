@@ -1,0 +1,48 @@
+Hi everyone, hope all is well. Please see Xero D
+dev direct email details.
+Hi Mark
+If you or your developers need support at any time, please feel free to email us at api@xero.com.
+Please let us know if you need any assistance and we'll be happy to help.
+Kind Regards
+Matt
+------------------------------------------------------------------------
+https://developer.xero.com/documentation/
+email: mr.ankitsahai@gmail.com
+Pwd: 15July@20
+---
+Crated New App : DemoAS
+ClientId : 		2884AA649A084D14B8F0F4096EED66BD
+scopers: 		offline_access openid profile email accounting.transactions
+RedirectURI: 	https://developer.xero.com
+
+-------------------------
+ [ Intigration Help] https://developer.xero.com/documentation/oauth2/pkce-flow
+
+1. Send a user to authorize your app
+ AuthorizeURL : https://login.xero.com/identity/connect/authorize
+ https://login.xero.com/identity/connect/authorize?response_type=code&client_id=2884AA649A084D14B8F0F4096EED66BD&redirect_uri=YOURREDIRECTURI&scope=openid profile email accounting.transactions&state=123&code_challenge=XXXXXXXXX&code_challenge_method=S256
+https://login.xero.com/identity/connect/authorize?response_type=code&client_id=YOURCLIENTID&redirect_uri=YOURREDIRECTURI&scope=openid profile email accounting.transactions&state=123&code_challenge=XXXXXXXXX&code_challenge_method=S256
+2. Users are redirected back to you with a code
+ 
+3. Exchange the code
+Access Token URL :      https://identity.xero.com/connect/token
+--------------
+  invalid_grant error : 
+
+
+
+Global Company
+
+AccessToken
+IdToken
+RefreshToken
+
+
+-----------------------------------------------------------------------------------------------------------
+Consume api from mvc .net
+Step 1 - Create MVC Application. ...
+Step 2 - Install HttpClient library from NuGet. (System.Net.Http)
+Step 3 - Install WebAPI.Client library from NuGet. (Microsoft.AspNet.WebApi.Client)
+Step 4 - Create Model Class. ...
+Step 5 - Add Controller Class.
+Step 6 - Create strongly typed View.
