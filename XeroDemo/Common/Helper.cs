@@ -21,7 +21,7 @@ namespace XeroDemo.Common
         public const string re_directURI = "https://developer.xero.com";
         public const string scopes = "offline_access openid profile email accounting.transactions";
         public const string state = "123";
-        public const string scopers = "offline_access openid profile email accounting.transactions";
+        //        public const string scopers = "offline_access openid profile email accounting.transactions";
 
         public static string refresh_token = string.Empty;
         public static string access_token = string.Empty;

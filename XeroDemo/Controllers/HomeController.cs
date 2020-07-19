@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using Xero.Api.Example.Applications.Public;
 using Xero.Api.Infrastructure.OAuth;
 using XeroDemo.Helpers;
+using System.Web.Script.Serialization;
 
 namespace XeroDemo.Controllers
 {
@@ -52,8 +54,40 @@ namespace XeroDemo.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            LogIn();
             return View();
         }
+
+        public void LogIn()
+        {
+            StringBuilder login = new StringBuilder();
+            login.Append("https://login.xero.com/identity/connect/authorize");
+            login.Append("?response_type=code");
+            login.Append("&client_id=" + Common.Helper.ClientId);
+            login.Append("&redirect_uri=" + Common.Helper.re_directURI);
+            login.Append("&scope=openid profile email accounting.transactions");
+            login.Append("&state=123");
+            login.Append("&code_challenge=XXXXXXXXX");
+            login.Append("&code_challenge_method=S256");
+
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri(login.ToString());
+                //HTTP GET
+                //                var responseTask = client.GetAsync("student");
+                var responseTask = client.GetAsync("");
+                responseTask.Wait();
+
+                var result = responseTask.Result;
+                if (result.IsSuccessStatusCode)
+                {
+                    var json = new JavaScriptSerializer().Serialize(result);
+
+                }
+            }
+        }
+
     }
 }
+
 // --------------------------------------------------------------------------------------------------------------------------------
