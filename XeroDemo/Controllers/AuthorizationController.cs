@@ -6,7 +6,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Mvc;
 using Xero.Api.Example.Applications.Public;
-using Xero.Api.Example.MVC.Helpers;
+//using Xero.Api.Example.MVC.Helpers;
 using Xero.Api.Infrastructure.OAuth;
 
 

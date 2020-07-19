@@ -46,3 +46,8 @@ Step 3 - Install WebAPI.Client library from NuGet. (Microsoft.AspNet.WebApi.Clie
 Step 4 - Create Model Class. ...
 Step 5 - Add Controller Class.
 Step 6 - Create strongly typed View.
+-----------------------------------------------------------------------------------------------------------
+19 July 2020 
+------------
+
+
